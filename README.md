@@ -37,7 +37,7 @@ This repository only holds the installer. The source code is private.
 This early version is signed with a test certificate, not a commercial one. Windows SmartScreen may therefore show "Windows protected your PC" or "Unknown publisher". If you trust this download, choose **More info** and then **Run anyway**. Each release lists the installer's SHA-256 checksum, so you can check the file you downloaded:
 
 ```powershell
-Get-FileHash .\Vidona-Setup-0.2.0.exe -Algorithm SHA256
+Get-FileHash .\Vidona-Setup-0.2.1.exe -Algorithm SHA256
 ```
 
 To update, download the newest installer and run it. Your projects and settings are kept.
