@@ -18,7 +18,7 @@ This repository only holds the installer. The source code is private.
 ## What it does
 
 1. **Import** a long video. Vidona transcribes it with Deepgram (fast, paid with your own key) or with Whisper on your PC (free).
-2. **Find clips.** AI reads the transcript and suggests the best moments, with the reason for each one. You approve, trim and title them.
+2. **Find clips.** AI reads the transcript and suggests the best moments, with the reason for each one. The ones most likely to hook viewers and keep them watching come first as Top picks, and each clip starts on its first real line. You approve, trim and title them.
 3. **Frame in 9:16.** Each clip is framed on your PC, following faces and whoever is speaking.
 4. **Edit.** Captions in nine styles, silence removal, punch-in zooms, an opening title, music ducked under the voice, your watermark and credit line: all free and without AI. Or ask for an AI edit plan that adds graphics, titles, sound effects and stock B-roll, and change things in plain words.
 5. **Export** finished clips with their caption files, covers and post text for TikTok, YouTube Shorts and Instagram Reels (title, caption and hashtags, written to each platform's rules), ready to post.
@@ -32,12 +32,12 @@ This repository only holds the installer. The source code is private.
 ## Installing
 
 1. Download `Vidona-Setup-<version>.exe` from [Releases](https://github.com/sufyanahmadkamboh/vidona-release/releases/latest) and run it.
-2. It installs for your Windows user only (no administrator rights needed) and adds Start menu and desktop shortcuts.
+2. By default it installs for your Windows user only (no administrator rights needed); the installer also offers to install it for everyone on the PC. It adds Start menu and desktop shortcuts.
 
 This early version is signed with a test certificate, not a commercial one. Windows SmartScreen may therefore show "Windows protected your PC" or "Unknown publisher". If you trust this download, choose **More info** and then **Run anyway**. Each release lists the installer's SHA-256 checksum, so you can check the file you downloaded:
 
 ```powershell
-Get-FileHash .\Vidona-Setup-0.2.1.exe -Algorithm SHA256
+Get-FileHash .\Vidona-Setup-0.3.0.exe -Algorithm SHA256
 ```
 
 To update, download the newest installer and run it. Your projects and settings are kept.
